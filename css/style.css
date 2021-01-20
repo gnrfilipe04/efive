@@ -211,7 +211,7 @@ header nav ul li a:active {
     margin: auto;
 }
 
-.devMobile {
+.card-service {
     padding: 5rem;
     margin-top: 20rem;
     width: 50rem;
@@ -229,7 +229,7 @@ header nav ul li a:active {
     border-radius: 5px;
 }
 
-.devMobile h1 {
+.card-service h1 {
     color: white;
     font-size: 2.5rem;
     letter-spacing: 0.2rem;
@@ -237,7 +237,7 @@ header nav ul li a:active {
     margin-bottom: 5rem;
 }
 
-.devMobile p {
+.card-service p {
     color: white;
     font-size: 1.6rem;
     line-height: 4rem;
