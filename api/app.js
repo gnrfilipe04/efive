@@ -31,8 +31,10 @@ module.exports = (req, res) => {
             console.log('Email enviado com sucesso.');
         }
 
-        res.json(a)
     });
 
+    res.json({
+        nome: "Filipe"
+    })
 
 }
