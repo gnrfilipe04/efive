@@ -3,9 +3,11 @@ import nodemailer from "nodemailer";
 module.exports = (req, res) => {
 
     var remetente = nodemailer.createTransport({
+        name: 'no-reply@estefanemedeiros.com',
         host: 'mail.estefanemedeiros.com',
         service: 'mail.estefanemedeiros.com',
         port: 465,
+        secure: true,
         auth: {
             user: 'contato@estefanemedeiros.com',
             pass: '@Estefane1'
