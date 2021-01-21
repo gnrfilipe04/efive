@@ -523,6 +523,8 @@ footer p{
     }
 }
 
+/* Laptop ============= */
+
 @media (max-width: 1440px){
 
     .card h1 {
@@ -563,6 +565,8 @@ footer p{
         
     }
 }
+
+/* Tablet ============= */
 
 @media (max-width: 768px){
 
@@ -663,15 +667,17 @@ footer p{
     
 }
 
+/* Mobile L ============= */
+
 @media (max-width: 425px){
     html {
-        font-size: 20%;
+        font-size: 30%;
     }
 
     .card img {
-        width: 150px;
+        width: 130px;
         height: auto;
-        margin-left: 10rem;
+        
     }
 
     #logo {
@@ -679,10 +685,29 @@ footer p{
         height: auto;
     }
 
+    .one,
+    .two,
+    .three {
+        background-color: #fff;
+        height: 2px;
+        width: 100%;
+        margin: 6px auto;
+
+        transition-duration: 0.3s;
+    }
+    
     .menu-toggle {
         width: 35px;
         height: 20px;
         
+    }
+
+    .menu-section.on .menu-toggle .one {
+        transform: rotate(45deg) translate(7px, 7px); 
+    }
+    
+    .menu-section.on .menu-toggle .three {
+        transform: rotate(-45deg) translate(8px, -9px);
     }
 
     .card-soluction img{
@@ -720,6 +745,7 @@ footer p{
 
     #form form {
         margin-top: 2rem;
+        margin-right: auto;
     }
 
     .button-submit {
@@ -741,7 +767,88 @@ footer p{
         width: 80px;
         height: auto;
     }
+}
 
+/* Mobile M ============= */
 
+@media (max-width: 375px){
+    html {
+        font-size: 27%;
+    }
+
+    header img {
+        background-position: center;
+    }
+
+    .card img {
+        width: 117px;
+        height: auto;
+             
+    }
+
+    #logo {
+        width: 100px;
+        height: auto;
+    }
+
+    .one,
+    .two,
+    .three {
+        background-color: #fff;
+        height: 2px;
+        width: 100%;
+        margin: 6px auto;
+
+        transition-duration: 0.3s;
+    }
+    
+    .menu-toggle {
+        width: 30px;
+        height: 20px;
+        
+    }
+
+    .card-soluction img{
+        margin-top: 1rem;
+        width: 270px;
+        height: auto;
+    }
+
+    .circle-purple {
+
+        width: 25px;
+        height: 25px;
+        background: #3662dd;
+        border-radius: 50px;
+        
+    }
+    
+    .circle-blue {
+    
+        width: 25px;
+        height: 25px;
+        background: #0ac7db;
+        border-radius: 50px;
+        margin-left: 2rem;
+    }
+    
+    .circle-green {
+    
+        width: 25px;
+        height: 25px;
+        background: #50eab8;
+        border-radius: 50px;
+        margin-left: 2rem;
+    }
+
+    #form form {
+        margin-top: 2rem;
+        margin-right: auto;
+    }
+
+    footer img {
+        width: 80px;
+        height: auto;
+    }
 }
 
