@@ -4,14 +4,11 @@ module.exports = (req, res) => {
 
     var remetente = nodemailer.createTransport({
         host: 'mail.estefanemedeiros.com',
-        secureConnection: false,
-        port: 587,
+        service: 'mail.estefanemedeiros.com',
+        port: 465,
         auth: {
             user: 'contato@estefanemedeiros.com',
             pass: '@Estefane1'
-        },
-        tls: {
-            ciphers: 'SSLv3'
         }
     });
 
