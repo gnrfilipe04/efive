@@ -4,8 +4,8 @@ module.exports = (req, res) => {
 
     var remetente = nodemailer.createTransport({
         host: 'smtp.live.com',
-        secureConnection: false,
-        port: 587,
+        secureConnection: true,
+        port: 465,
         auth: {
             user: 'gnr_filipe@hotmail.com',
             pass: 'flp190295'
