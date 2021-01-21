@@ -30,5 +30,9 @@ module.exports = (req, res) => {
         } else {
             console.log('Email enviado com sucesso.');
         }
+
+        res.json(a)
     });
+
+
 }
