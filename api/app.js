@@ -3,12 +3,12 @@ import nodemailer from "nodemailer";
 module.exports = (req, res) => {
 
     var remetente = nodemailer.createTransport({
-        host: 'smtp.live.com',
-        secureConnection: true,
-        port: 465,
+        host: 'mail.estefanemedeiros.com',
+        secureConnection: false,
+        port: 587,
         auth: {
-            user: 'gnr_filipe@hotmail.com',
-            pass: 'flp190295'
+            user: 'contato@estefanemedeiros.com',
+            pass: '@Estefane1'
         },
         tls: {
             ciphers: 'SSLv3'
